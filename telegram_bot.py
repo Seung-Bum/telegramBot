@@ -38,7 +38,6 @@ if res.status_code == 200:
     new_title = soup.select(".news_tit")
 
     title_list = []
-
     for title in new_title:
         print(title.text)
         print(title["href"])
