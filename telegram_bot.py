@@ -19,7 +19,7 @@ def send_message(message=None):
     # message가 없을 경우 입력 실행
     if not message:
         message = "다시 입력해주세요."
-    # 채팅방으로 메시지를 밣송
+    # 탤레그램 채팅방으로 메시지를 발송
     data = {"chat_id": chat_id, "text": message}
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     res = requests.get(url, data=data)
